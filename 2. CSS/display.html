@@ -1,0 +1,45 @@
+<!Doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display</title>
+        <style>
+            .blue{
+                background-color: #4267B2;
+                color: white;
+                height: 100px;
+                width: auto;
+                /*visibility: hidden;*/
+                /*display: none;*/ 
+            }
+            .yellow{
+                background-color: #c9d61b;
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .green{
+                background-color: #22ae24;
+                height: 100px;
+                width: auto;
+            }
+            .great{
+                background-color: #6a6e7f;
+                display: block;/* just displayed as block but still an inline element */
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="blue">
+            <p>Facebook is <span class="great">great</span></p>
+        </div>
+        <div class="yellow">
+            <p>Apple</p>
+        </div>
+        <div class="green">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>

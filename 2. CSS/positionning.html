@@ -1,0 +1,53 @@
+<!Doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Positionning</title>
+        <style>
+            .blue{
+                background-color: #4267B2;
+                color: white;
+                height: 100px;
+                width: auto;
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                /*z-index: 1; if there is no z-index, the one that comes the last will be on the top of the rest */
+            }
+            .yellow{
+                background-color: #c9d61b;
+                color: white;
+                height: 100px;
+                width: auto;
+                position: relative;
+                top: 20px;
+                left: 20px;
+                /*z-index: 0;*/
+            }
+            .green{
+                background-color: #22ae24;
+                height: 100px;
+                width: auto;
+                position: absolute; 
+                top: 40px; /* 40px from te first non static parent */
+                left: 40px;  
+            }
+            .great{
+                background-color: #6a6e7f;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="blue">
+            <p>Facebook is <span class="great">great</span></p>
+        </div>
+        <div class="yellow">
+            <p>Apple</p>
+        </div>
+        <div class="green">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>
